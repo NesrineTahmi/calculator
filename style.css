@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fadcdc73;
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container{
+    border-radius: 30px;
+    width: 30%;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(222, 243, 236);
+}
+
+.btn{
+   background-color: rgb(178, 235, 229); 
+   border: none;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 10px;
+   font-size: 1.2em;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   -webkit-box-shadow: 3px 3px 0px 1px rgba(99, 128, 121, 0.75);
+   -moz-box-shadow: 3px 3px 0px 1px rgba(99, 128, 121, 0.75);
+   box-shadow: 3px 3px 0px 1px rgba(99, 128, 121, 0.75);
+   
+}
+
+.display {
+    background-color: rgba(99, 128, 121, 0.75);
+    color: #fff;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 8px;
+    padding-right: 20px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+#clear {
+    grid-column: span 4;
+
+}
+
+.btn:hover{
+    -webkit-box-shadow: 2px 2px 0px 1px rgba(99, 128, 121, 0.75);
+    -moz-box-shadow: 2px 2px 0px 1px rgba(99, 128, 121, 0.75);
+    box-shadow: 2px 2px 0px 1px rgba(99, 128, 121, 0.75);
+}
